@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFB6C1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 300px;
+}
+
+.btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.btn-confirmar {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn-recusar {
+    background-color: #FF6347;
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.mensagem {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: none;
+    z-index: 1000;
+}
+
+.saudacao {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'Brush Script MT', 'Lucida Handwriting', cursive;
+    font-size: 1.2em;
+    width: 80%;
+    max-width: 300px;
+}
+
+.saudacao h2 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.saudacao p {
+    color: #666;
+    font-size: 1.5em;
+}
+
+/* Ajuste no container para acomodar a saudação */
+.container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.animacao {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FFB6C1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.coracao, .alianca, .flor {
+    position: absolute;
+    opacity: 0;
+}
+
+.coracao {
+    width: 50px;
+    height: 50px;
+    background-color: #FF69B4;
+    transform: rotate(45deg);
+}
+
+.coracao:before,
+.coracao:after {
+    content: '';
+    width: 50px;
+    height: 50px;
+    background-color: #FF69B4;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.coracao:before {
+    left: -25px;
+}
+
+.coracao:after {
+    top: -25px;
+}
+
+.alianca {
+    width: 40px;
+    height: 40px;
+    border: 5px solid #FFD700;
+    border-radius: 50%;
+}
+
+.flor {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+}
+
+.petala {
+    width: 20px;
+    height: 40px;
+    background-color: #FFC0CB; /* Rosa claro */
+    border-radius: 50% 50% 0 0;
+    position: absolute;
+    transform-origin: bottom center;
+    top: 50%;
+    left: 50%;
+    margin-left: -10px;
+}
+
+.conteudo {
+    opacity: 0;
+}
+
+.nomes {
+    position: absolute;
+    font-size: 48px;
+    color: #0b0447;
+    font-family: 'Brush Script MT', cursive;
+    opacity: 0;
+    white-space: nowrap;
+}
+
+/* .nomes-cursivos {
+    font-family: 'Dancing Script', 'Brush Script MT', 'Lucida Handwriting', cursive;
+    font-size: 1.2em;
+    color: #0b0447;
+} */
