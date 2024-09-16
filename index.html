@@ -11,15 +11,74 @@
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <!-- Adicione o link para a fonte "Inria Serif" -->
     <link href="https://fonts.googleapis.com/css2?family=Inria+Serif&display=swap" rel="stylesheet">
+    <style>
+        .convite {
+            position: relative;
+            /* Mantenha os estilos existentes da borda aqui */
+        }
+        #animacao-inicial {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 2;
+            transition: opacity 0.5s ease-in-out;
+        }
+        #mensagem {
+            font-size: 2em;
+            font-family: 'Inria Serif', serif;
+            opacity: 1;
+            transition: opacity 0.5s ease-in-out;
+        }
+        #porta {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            transform-origin: left;
+            transition: transform 1s ease-in-out;
+            z-index: 1;
+        }
+        .conteudo > *,
+        .flores-topo,
+        .flores-base {
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .btn-responder {
+            background-color: rgba(128, 0, 128, 0.2); /* Roxo claro com opacidade */
+            color: #4B0082; /* Cor do texto em roxo escuro */
+            border: 1px solid #4B0082;
+            font-family: 'Inria Serif', serif;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-responder:hover {
+            background-color: rgba(128, 0, 128, 0.4);
+            color: #4B0082;
+        }
+    </style>
 </head>
 <body>
-    <div id="petalas-container"></div>
     <div class="container-fluid d-flex justify-content-center align-items-center min-vh-100">
         <div class="convite">
             <div class="flores-topo"></div>
+            <div id="animacao-inicial">
+                <div id="mensagem"></div>
+            </div>
+            <div id="porta"></div>
             <div class="conteudo">
                 <p class="citacao">"O amor é paciente e bondoso. Ele perdoa, confia, espera e suporta tudo. O amor nunca termina."</p>
                 <h1 class="mb-4 great-vibes">Paulo & Rhana</h1>
+
                 <p class="bencao">COM A BENÇÃO DE SEUS PAIS:</p>
                 <p class="pais">
                     <span class="pais-esquerda">
@@ -34,7 +93,7 @@
                 </p>
                 <p class="convite-texto">CONVIDAM PARA A CELEBRAÇÃO<br>DO SEU CASAMENTO</p>
                 <p class="data">30 de maio de 2025 | 16:00</p>
-                <p class="local">A realizar-se</p>
+                <button class="btn btn-responder">Responder</button>
             </div>
             <div class="flores-base"></div>
         </div>
@@ -43,5 +102,7 @@
     <!-- Adicione o script do Bootstrap (opcional, se você não usar componentes JavaScript) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
+
+    <script src="animacao.js"></script>
 </body>
 </html>

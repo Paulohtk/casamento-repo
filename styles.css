@@ -150,6 +150,10 @@ h1 {
         font-size: 24px;
     }
 
+    .citacao{
+        right: -2rem;
+    }
+
     .citacao, .pais, .local {
         font-size: 12px;
     }
