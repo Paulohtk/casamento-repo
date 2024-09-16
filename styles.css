@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.convite {
+    width: 90%;
+    max-width: 400px;
+    aspect-ratio: 9 / 16;
+    background-color: white;
+    border: 2px solid #0cc0df;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.flores-topo {
+    position: absolute;
+    top: -19.5px;
+    right: 12.6rem;
+    width: 60%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    background-image: url('flores-azuis.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.flores-base {
+    position: absolute;
+    bottom: -5rem;
+    left: 12.68rem;
+    width: 60%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    background-image: url('flores-roxas.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.conteudo {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.citacao {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.bencao{
+    font-family: 'Inria Serif', serif;
+}
+
+.bencao {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.pais {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.e {
+    display: block;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.convite-texto {
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.data {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.local {
+    font-style: italic;
+    font-size: 14px;
+}
+
+.great-vibes {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5rem;
+}
+
+@media (max-width: 576px) {
+    .flores-topo {
+        position: absolute;
+        top: -17.5px;
+        right: 10.4rem;
+        width: 60%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        background-image: url('flores-azuis.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    
+    .flores-base {
+        position: absolute;
+        bottom: -4.1rem;
+        left: 10.5rem;
+        width: 60%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        background-image: url('flores-roxas.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .convite {
+        width: 95%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .citacao, .pais, .local {
+        font-size: 12px;
+    }
+
+    .e {
+        font-size: 18px;
+    }
+
+    .convite-texto, .data {
+        font-size: 14px;
+    }
+}
+
+#petalas-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.petala {
+    position: absolute;
+    top: -10px;
+    width: 15px;
+    height: 15px;
+    background-color: rgba(100, 149, 237, 0.7);
+    border-radius: 50% 0 50% 50%;
+    animation: cair linear forwards;
+}
+
+@keyframes cair {
+    to {
+        transform: translateY(100vh) rotate(720deg);
+    }
+}

@@ -3,28 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Convite de Casamento - Paulo e Rhana</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.12.0/tsparticles.confetti.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <title>Convite de Casamento - Rhana & Paulo</title>
+    <!-- Adicione o link para o CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Adicione o link para a fonte "Great Vibes" -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <!-- Adicione o link para a fonte "Inria Serif" -->
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="animacao" class="animacao">
-        <div class="coracao"></div>
-        <div class="alianca"></div>
-        <div class="flor"></div>
-        <div id="nomes" class="nomes">Paulo & Rhana</div>
-    </div>
-    <div id="conteudo" class="conteudo" style="display: none;">
-        <div id="saudacao" class="saudacao"></div>
-        <div class="container">
-            <button id="confirmar" class="btn btn-confirmar">Confirmar presença</button>
-            <button id="recusar" class="btn btn-recusar">Não poderei comparecer</button>
+    <div id="petalas-container"></div>
+    <div class="container-fluid d-flex justify-content-center align-items-center min-vh-100">
+        <div class="convite">
+            <div class="flores-topo"></div>
+            <div class="conteudo">
+                <p class="citacao">"O amor é paciente e bondoso. Ele perdoa, confia, espera e suporta tudo. O amor nunca termina."</p>
+                <h1 class="mb-4 great-vibes">Paulo & Rhana</h1>
+                <p class="bencao">COM A BENÇÃO DE SEUS PAIS:</p>
+                <p class="pais">
+                    Valdirone Nogueira da Silva<br>
+                    Elizeu Antônio Paes
+                    <span class="e">&</span>
+                    Gislaine<br>
+                    Paulo
+                </p>
+                <p class="convite-texto">CONVIDAM PARA A CELEBRAÇÃO<br>DO SEU CASAMENTO</p>
+                <p class="data">30 de maio de 2025 | 16:00</p>
+                <p class="local">A realizar-se</p>
+            </div>
+            <div class="flores-base"></div>
         </div>
-        <div id="mensagem" class="mensagem"></div>
     </div>
-    <audio id="musica" src="https://cdn.pixabay.com/download/audio/2024/01/11/audio_db7db1f777.mp3?filename=cheerful-mood-185352.mp3"></audio>
-    <script src="js.js"></script>
+    
+    <!-- Adicione o script do Bootstrap (opcional, se você não usar componentes JavaScript) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
