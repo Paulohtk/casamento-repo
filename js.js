@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             });
                         }
                     });
-                }, 3000); // Aumentado para dar mais tempo de ver a animação
+                }, 1000); // Aumentado para dar mais tempo de ver a animação
             }
         }).add({
             targets: '.coracao',
