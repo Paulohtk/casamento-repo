@@ -192,3 +192,62 @@ h1 {
         transform: translateY(100vh) rotate(720deg);
     }
 }
+
+/* Adicione os seguintes estilos */
+.convite {
+    position: relative;
+}
+
+#animacao-inicial {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#mensagem {
+    font-size: 2em;
+    font-family: 'Inria Serif', serif;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#porta {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transform-origin: left;
+    transition: transform 1s ease-in-out;
+    z-index: 1;
+}
+
+.conteudo > *,
+.flores-topo,
+.flores-base {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.btn-responder {
+    background-color: rgba(128, 0, 128, 0.2);
+    color: #4B0082;
+    border: 1px solid #4B0082;
+    font-family: 'Inria Serif', serif;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-responder:hover {
+    background-color: rgba(128, 0, 128, 0.4);
+    color: #4B0082;
+}
