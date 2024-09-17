@@ -6,7 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const floresTopo = document.querySelector('.flores-topo');
     const floresBase = document.querySelector('.flores-base');
     const elementosConteudo = conteudo.querySelectorAll('*');
-    const texto = "Olá Gislaine";
+    const urlParams = new URLSearchParams(window.location.search);
+    const nome = urlParams.get('nome');
+    const texto = `Olá ${nome}`;
     let index = 0;
 
     function escreverTexto() {
