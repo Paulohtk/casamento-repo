@@ -251,3 +251,46 @@ h1 {
     background-color: rgba(128, 0, 128, 0.4);
     color: #4B0082;
 }
+
+.respostas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 20px;
+    z-index: 3;
+}
+
+.btn-confirmar {
+    background-color: rgba(128, 0, 128, 0.2);
+    color: #4B0082;
+    border: 1px solid #4B0082;
+}
+
+.btn-nao-confirmar {
+    background-color: rgba(0, 128, 128, 0.2);
+    color: #008080;
+    border: 1px solid #008080;
+}
+
+.btn-confirmar:hover, .btn-nao-confirmar:hover {
+    opacity: 0.8;
+}
+
+#porta, #segunda-porta {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transform-origin: left;
+    transition: transform 1s ease-in-out;
+    z-index: 1;
+}
+
+#segunda-porta {
+    z-index: 3;
+    display: none;
+}
